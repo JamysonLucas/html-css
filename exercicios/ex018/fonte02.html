@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: Mayonice;
+            src: url(fonte/Mayonice.otf,) format(opentype), url(fonte/Mayonice.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+            Tipos de format
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        h1 {
+            font-family: mayonice, serif;
+            font-size: 5em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tempora reiciendis blanditiis doloribus iusto facere perferendis, deleniti quae quos ipsam pariatur porro officiis distinctio nostrum asperiores recusandae, repellat excepturi ab.</p>
+</body>
+</html>
