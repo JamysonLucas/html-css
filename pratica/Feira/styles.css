@@ -10,24 +10,3 @@
 
 --fontedestaque: "raleway";
 }
-
-.apresentaçao {
-    background-image: url(ipeamarelobl.jpg);
-    background-size: cover;
-    padding: 100px;
-    background-position: center;
-    text-align: center;
-}
-
-.apresentaçao h1 {
-    color: white;
-    font-weight: 800;
-    font-family: var(--fontedestaque);
-    font-size: 2em;
-    margin: 0px;
-}
-
-.apresentaçao p {
-    color: white;
-    font-family: sans-serif;
-}
