@@ -20,21 +20,29 @@ body {
     width: auto;
 }
 
-#navegaçao {
-    
+#logo {
+    text-align: left;
+    display: block;
+}
+
+#logo img {
+    max-width: 30%;
+    height: auto;
 }
 
 #navegaçao a {
     padding-left: 15px;
     color: black;
     text-decoration: none;
+    margin-bottom: 30px;
 }
 
-#navegaçao img {
-    max-width: 15%;
+#navegaçao > nav {
+    margin-left: 100px;
+    margin-right: 30px;
 }
 
-#apresentaçao {
+#imagem-apresentaçao {
     background: url(Planta.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -45,14 +53,14 @@ body {
     padding-bottom: 150px;
 }
 
-#apresentaçao h1 {
+#imagem-apresentaçao h1 {
     font-family: var(--fontedestaque);
     color: white;
     font-size: 50px;
     padding-top: 10px;
 }
 
-#apresentaçao p {
+#imagem-apresentaçao p {
     color: var(--cor1);
     font-size: 25px;
     padding-bottom: 15px;
