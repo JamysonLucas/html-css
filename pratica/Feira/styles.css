@@ -95,11 +95,18 @@ header {
 }
 
 .menu a {
-    padding: 10px 6px;
+    padding: 10px 16px;
     font-family: var(--fontesans);
     font-weight: 600;
     color: gray;
     text-decoration: none;
+}
+
+.menu a:hover {
+    color: white;
+    background-color: var(--cor2);
+    border-radius: 10px;
+    transition: color 0.5s ease,background-color 0.5s ease, border-radius 0.5s ease;
 }
 
 #imagem-apresentaçao {
@@ -214,4 +221,66 @@ header {
     font-size: 20px;
     margin-bottom: 10px;
     color: var(--cor2);
+}
+
+.forms {
+  background-color: white;
+  padding: 40px 20px;
+  margin: 20px 0px 0px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.forms h1 {
+  font-family: var(--fontedestaque);
+  font-size: 2.2em;
+  color: var(--cor4);
+  margin-bottom: 10px;
+}
+
+.forms p {
+  font-family: var(--fontesans);
+  font-size: 1.1em;
+  color: var(--cor5);
+  margin-bottom: 25px;
+}
+
+.forms a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--cor2);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-family: var(--fontesans);
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.forms a h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.forms .icon {
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.forms a:hover .icon {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.rodape {
+  background-color: var(--cor4);
+  color: white;
+  padding: 20px 10px;
+  font-family: var(--fontesans);
+  text-align: center;
 }
