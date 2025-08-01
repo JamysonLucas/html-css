@@ -9,9 +9,17 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -24,6 +32,17 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        /* ood = impar, even = par */
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
         .num {
             text-align: right;
         }
@@ -34,6 +53,7 @@
     <!--
     ANATOMIA PARA TABELAS GRANDES
     TABLE
+       CAPTION
        THEAD
           TR,TD,TH
        TBODY
@@ -43,10 +63,12 @@
     -->
 
     <table>
+        <caption>Populaçao das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populaçao</th>
+                <!--Scope = "col" indica titulo de coluna-->
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">Populaçao</th>
             </tr>
         </thead>
         <tbody>
@@ -161,10 +183,17 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <!--Scope = "row" indica que é um titulo de linha-->
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>212 583 750</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magnam corporis aperiam molestiae perferendis unde obcaecati. Velit sint, laudantium, quae nostrum corporis doloremque cumque molestiae autem reiciendis inventore quia sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam voluptatibus aspernatur eos hic voluptate incidunt nesciunt maxime, reiciendis labore earum voluptates id sunt deserunt veritatis provident similique maiores aliquid rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellat placeat animi velit repellendus praesentium hic modi sit molestiae. Odit sed quia praesentium, accusamus quam nam dolore. Delectus, veniam recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem pariatur ea officiis, voluptatum deserunt modi illo commodi consequuntur aliquid, numquam omnis delectus? Aliquid reiciendis et dolorum voluptas molestias obcaecati dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolores dolore incidunt sequi repellendus, ab harum quisquam tempore a aliquid esse consequuntur rerum eius vero modi maxime perferendis officiis. Similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magnam corporis aperiam molestiae perferendis unde obcaecati. Velit sint, laudantium, quae nostrum corporis doloremque cumque molestiae autem reiciendis inventore quia sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam voluptatibus aspernatur eos hic voluptate incidunt nesciunt maxime, reiciendis labore earum voluptates id sunt deserunt veritatis provident similique maiores aliquid rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellat placeat animi velit repellendus praesentium hic modi sit molestiae. Odit sed quia praesentium, accusamus quam nam dolore. Delectus, veniam recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem pariatur ea officiis, voluptatum deserunt modi illo commodi consequuntur aliquid, numquam omnis delectus? Aliquid reiciendis et dolorum voluptas molestias obcaecati dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolores dolore incidunt sequi repellendus, ab harum quisquam tempore a aliquid esse consequuntur rerum eius vero modi maxime perferendis officiis. Similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magnam corporis aperiam molestiae perferendis unde obcaecati. Velit sint, laudantium, quae nostrum corporis doloremque cumque molestiae autem reiciendis inventore quia sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam voluptatibus aspernatur eos hic voluptate incidunt nesciunt maxime, reiciendis labore earum voluptates id sunt deserunt veritatis provident similique maiores aliquid rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellat placeat animi velit repellendus praesentium hic modi sit molestiae. Odit sed quia praesentium, accusamus quam nam dolore. Delectus, veniam recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem pariatur ea officiis, voluptatum deserunt modi illo commodi consequuntur aliquid, numquam omnis delectus? Aliquid reiciendis et dolorum voluptas molestias obcaecati dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolores dolore incidunt sequi repellendus, ab harum quisquam tempore a aliquid esse consequuntur rerum eius vero modi maxime perferendis officiis. Similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magnam corporis aperiam molestiae perferendis unde obcaecati. Velit sint, laudantium, quae nostrum corporis doloremque cumque molestiae autem reiciendis inventore quia sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam voluptatibus aspernatur eos hic voluptate incidunt nesciunt maxime, reiciendis labore earum voluptates id sunt deserunt veritatis provident similique maiores aliquid rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellat placeat animi velit repellendus praesentium hic modi sit molestiae. Odit sed quia praesentium, accusamus quam nam dolore. Delectus, veniam recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem pariatur ea officiis, voluptatum deserunt modi illo commodi consequuntur aliquid, numquam omnis delectus? Aliquid reiciendis et dolorum voluptas molestias obcaecati dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolores dolore incidunt sequi repellendus, ab harum quisquam tempore a aliquid esse consequuntur rerum eius vero modi maxime perferendis officiis. Similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magnam corporis aperiam molestiae perferendis unde obcaecati. Velit sint, laudantium, quae nostrum corporis doloremque cumque molestiae autem reiciendis inventore quia sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam voluptatibus aspernatur eos hic voluptate incidunt nesciunt maxime, reiciendis labore earum voluptates id sunt deserunt veritatis provident similique maiores aliquid rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellat placeat animi velit repellendus praesentium hic modi sit molestiae. Odit sed quia praesentium, accusamus quam nam dolore. Delectus, veniam recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem pariatur ea officiis, voluptatum deserunt modi illo commodi consequuntur aliquid, numquam omnis delectus? Aliquid reiciendis et dolorum voluptas molestias obcaecati dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolores dolore incidunt sequi repellendus, ab harum quisquam tempore a aliquid esse consequuntur rerum eius vero modi maxime perferendis officiis. Similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magnam corporis aperiam molestiae perferendis unde obcaecati. Velit sint, laudantium, quae nostrum corporis doloremque cumque molestiae autem reiciendis inventore quia sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam voluptatibus aspernatur eos hic voluptate incidunt nesciunt maxime, reiciendis labore earum voluptates id sunt deserunt veritatis provident similique maiores aliquid rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellat placeat animi velit repellendus praesentium hic modi sit molestiae. Odit sed quia praesentium, accusamus quam nam dolore. Delectus, veniam recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem pariatur ea officiis, voluptatum deserunt modi illo commodi consequuntur aliquid, numquam omnis delectus? Aliquid reiciendis et dolorum voluptas molestias obcaecati dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolores dolore incidunt sequi repellendus, ab harum quisquam tempore a aliquid esse consequuntur rerum eius vero modi maxime perferendis officiis. Similique.</p>
 </body>
 </html>
